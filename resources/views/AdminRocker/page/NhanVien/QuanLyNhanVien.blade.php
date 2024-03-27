@@ -23,7 +23,6 @@
             <thead clas="bg-primary">
               <tr>
                 <th class="text-center">ID</th>
-                <th class="text-center">Hình Ảnh</th>
                 <th class="text-center">Tên Tài Khoản</th>
                 <th class="text-center">Email</th>
                 <th class="text-center">Vai Trò</th>
@@ -33,9 +32,6 @@
             <tbody>
               <tr  style="border: 1px solid #000;" v-for="(taikhoan, key) in data_taikhoan" v-if="taikhoan.loai_tai_khoan > 1 && taikhoan.loai_tai_khoan < (TaiKhoanDangNhap.loai_tai_khoan == 4 ? 4 : 5)">
                 <th style="border: 1px solid #000;"class="align-middle text-center">@{{ taikhoan.id }}</th>
-                <th style="border: 1px solid #000;"class="align-middle text-center">
-                  <img v-bind:src="taikhoan.hinh_anh" class="img-fluid" style="max-width: 100px;">                  
-                </th>
                 <td style="border: 1px solid #000;" class="align-middle text-center">@{{ taikhoan.ten_tai_khoan }}</td>
                 <td style="border: 1px solid #000;" class="align-middle text-center">@{{ taikhoan.email }}</td>
                 <td style="border: 1px solid #000;" class="align-middle text-center">
@@ -79,18 +75,6 @@
                         @{{ errors.email[0] }}
                       </div>
                     </div>
-                    <div class="form-group mt-3">
-                      <label>Ảnh Sản Phẩm</label>
-                      <div class="input-group">
-                          <input id="hinh_anh" class="form-control" type="text" name="filepath">
-                          <span class="input-group-prepend">
-                              <a id="lfm" data-input="hinh_anh" data-preview="holder" class="btn btn-primary">
-                                  <i class="fa fa-picture-o"></i> Choose
-                              </a>
-                          </span>
-                      </div>
-                      <div id="holder" style="margin-top:15px;max-height:100px;"></div>
-                  </div>
                     <div class="form-group mt-3">
                       <label>Số điện thoại</label>
                       <input v-model="add_user.so_dien_thoai" type="text" class="form-control"

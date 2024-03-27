@@ -15,11 +15,11 @@ class headerComposer
     public function compose(View $view)
     {
         // Truyền dữ liệu vào view
-        $danhMuc = DanhmucModel::all();
-        $theLoai = LoaisanphamModel::all();
+        // $danhMuc = DanhmucModel::all();
+        // $theLoai = LoaisanphamModel::all();
 
-        $view->with('danhMuc', $danhMuc);
-        $view->with('theLoai', $theLoai);
+        // $view->with('danhMuc', $danhMuc);
+        // $view->with('theLoai', $theLoai);
        
     }
 }

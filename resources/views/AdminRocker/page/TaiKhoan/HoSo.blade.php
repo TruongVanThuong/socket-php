@@ -73,22 +73,6 @@
               </div>
               <div class="row mb-3">
                 <div class="col-sm-3">
-                  <h6 class="mb-0">Hình Ảnh</h6>
-                </div>
-                <div class="col-sm-9 text-secondary">
-                  <div class="input-group">
-                    <input id="hinh_anh_update" class="form-control" type="text" name="filepath">
-                    <span class="input-group-prepend">
-                      <a id="lfm_update" data-input="hinh_anh_update" data-preview="holder_update" class="btn btn-primary">
-                        <i class="fa fa-picture-o"></i> Choose
-                      </a>
-                    </span>
-                  </div>
-                  <div id="holder_update" style="margin-top:15px;max-height:100px;"></div>
-                </div>
-              </div>
-              <div class="row mb-3">
-                <div class="col-sm-3">
                   <h6 class="mb-0">Số điện thoại</h6>
                 </div>
                 <div class="col-sm-9 text-secondary">
