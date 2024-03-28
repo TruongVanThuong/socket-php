@@ -26,14 +26,15 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>@{{ socket.response.stt }}</td>
-                        <td>@{{ socket.response.url }}</td>
-                        <td>@{{ socket.response.row1 }}</td>
-                        <td>@{{ socket.response.row2 }}</td>
-                        <td>@{{ socket.response.row3 }}</td>
-                        <td>@{{ socket.response.row4 }}</td>
+                        <td>@{{ socket.response }}</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                     </tr>
                 </tbody>
+                <div v-if="errorMessage" class="alert alert-danger">@{{ errorMessage }}</div>
             </table>
         </div>
     </div>
@@ -49,6 +50,7 @@
                 response: {}
             },
             errors: {},
+            errorMessage: '',
         },
 
         methods: {
@@ -61,16 +63,16 @@
                         if (res.data.status) {
                             toastr.success(res.data.message);
                             this.socket.response = res.data.data;
+                            this.errorMessage = res.data.message;
                         } else {
                             toastr.error('Có lỗi không mong muốn! 1');
+                            this.errorMessage = res.data.message;
                         }
                     })
                     .catch((error) => {
-                        if (error && error.response.data && error.response.data.errors) {
-                            this.errors = error.response.data.errors;
-                        } else {
-                            toastr.error('Có lỗi không mong muốn! 2');
-                        }
+                        console.error(error); // In ra lỗi cụ thể để xem làm thế nào để xử lý nó
+                        toastr.error('Có lỗi không mong muốn! Hãy kiểm tra console log để biết thêm chi tiết.');
+                        this.errorMessage = res.data.message;
                     })
             }
         },

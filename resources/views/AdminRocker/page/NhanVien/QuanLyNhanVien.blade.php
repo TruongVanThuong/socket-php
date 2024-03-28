@@ -157,19 +157,6 @@
                       </div>
                     </div>
                     <div class="form-group mt-3">
-                      <label>Hình </label>
-                      <div class="input-group">
-                          <input id="hinh_anh_update" class="form-control" type="text" name="filepath">
-                          <span class="input-group-prepend">
-                              <a id="lfm_update" data-input="hinh_anh_update" data-preview="holder_update" class="btn btn-primary">
-                                  <i class="fa fa-picture-o"></i> Choose
-                              </a>
-                          </span>
-                      </div>
-                      <div id="holder_update" style="margin-top:15px; max-height:100px;">
-                      </div>
-                    </div>
-                    <div class="form-group mt-3">
                       <label>Số điện thoại</label>
                       <input v-model="edit_user.so_dien_thoai" type="text" class="form-control"
                         placeholder="Nhập vào số điện thoại">
@@ -292,9 +279,9 @@
       getTenPhanQuyen(rolePhanQuyen) {
         switch (rolePhanQuyen) {
           case 2:
-            return 'Nhân Viên Bán Hàng';
+            return 'Nhân Viên 1';
           case 3:
-            return 'Nhân Viên Đăng Bài';
+            return 'Nhân Viên 2';
           case 4:
             return 'Quản Lý Nhân Viên';
           case 5:

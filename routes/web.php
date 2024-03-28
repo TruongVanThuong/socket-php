@@ -49,7 +49,7 @@ Route::group(['namespace' => 'admin', 'prefix' => 'admin', 'name' => 'AdminRocke
       // Quan Ly Nhân viên --------------
       Route::group(['prefix' => '/quan-ly-nhan-vien'], function () {
         Route::get('/', [QLNhanVienController::class, 'QuanLyNhanVien']);
-        Route::post('/du-lieu', [QLNhanVienController::class, 'DuLieuNhanVien']);
+        Route::get('/du-lieu', [QLNhanVienController::class, 'DuLieuNhanVien']);
         Route::post('/them-nhan-vien', [QLNhanVienController::class, 'ThemNhanVien']);
         Route::post('/xoa-nhan-vien', [QLNhanVienController::class, 'XoaNhanVien']);
         Route::post('/cap-nhat-nhan-vien', [QLNhanVienController::class, 'CapNhatNhanVien']);
