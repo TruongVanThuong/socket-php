@@ -6,8 +6,7 @@
 <script src="/assets_admin_rocker/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
 <script src="/assets_admin_rocker/plugins/vectormap/jquery-jvectormap-2.0.2.min.js"></script>
 <script src="/assets_admin_rocker/plugins/vectormap/jquery-jvectormap-world-mill-en.js"></script>
-<script src="/assets_admin_rocker/plugins/chartjs/js/Chart.min.js"></script>
-<script src="/assets_admin_rocker/plugins/chartjs/js/Chart.extension.js"></script>
+
 <script src="/assets_admin_rocker/js/index.js"></script>
 <!--app JS-->
 <script src="/assets_admin_rocker/js/app.js"></script>

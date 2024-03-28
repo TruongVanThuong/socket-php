@@ -29,27 +29,14 @@
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.js"></script>
 
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
+
+<!-- style -->
 <style>
   [v-cloak] {
     display: none;
   }
 
-  #ui-datepicker-div{
-    top: 250px !important;
-    z-index: 10 !important;
-    width: 350px;
-  }
-
 </style>
-<!-- theme css -->
-<link rel="stylesheet" href="/assets_admin_rocker/css/tailwind.css" />
-<link rel="stylesheet" href="/assets_admin_rocker/css/tailwind.output.css" />
-<!-- Style CSS -->
-<link rel="stylesheet" href="/css/style.css" />
-
-
-<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
-
-
-
 
